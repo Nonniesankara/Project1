@@ -14,8 +14,8 @@ const forecastContainer = document.getElementById("forecast-container");
 
 // Event Listeners
 document.addEventListener("DOMContentLoaded", () => {
-    // Default to London weather on load
-    fetchWeather("London");
+    // Default to Nairobi weather on load
+    fetchWeather("Nairobi");
 });
 
 searchBtn.addEventListener("click", () => {
@@ -119,7 +119,7 @@ function displayForecast(data) {
     
     for (const forecast of data.list) {
         const date = new Date(forecast.dt * 1000);
-        const day = date.toLocaleDateString("en-US", { weekday: "short" });
+        const day = date.toLocaleDateString("en-UK", { weekday: "short" });
         
         if (!daysAdded.has(day)) {
             daysAdded.add(day);

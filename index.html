@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast SPA</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <p>Get current weather and 5-day forecast for any city</p>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        
+        <div class="unit-toggle">
+            <button id="celsius-btn" class="active">°C</button>
+            <button id="fahrenheit-btn">°F</button>
+        </div>
+        
+        <div class="error-message" id="error-message">
+            City not found. Please try another location.
+        </div>
+        
+        <div class="weather-card" id="current-weather">
+            <div class="current-weather">
+                <div class="weather-main">
+                    <img id="weather-icon" class="weather-icon" src="" alt="Weather icon">
+                    <div>
+                        <h2 id="city-name">City Name</h2>
+                        <p id="weather-description">Weather description</p>
+                    </div>
+                </div>
+                <div class="temp" id="current-temp">25°C</div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <p>Feels Like</p>
+                    <p id="feels-like">24°C</p>
+                </div>
+                <div class="detail-item">
+                    <p>Humidity</p>
+                    <p id="humidity">65%</p>
+                </div>
+                <div class="detail-item">
+                    <p>Wind Speed</p>
+                    <p id="wind-speed">12 km/h</p>
+                </div>
+                <div class="detail-item">
+                    <p>Pressure</p>
+                    <p id="pressure">1012 hPa</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3 style="margin: 20px 0 10px; display: none;" id="forecast-title">5-Day Forecast</h3>
+        <div class="forecast-container" id="forecast-container"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

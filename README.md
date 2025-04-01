@@ -1,6 +1,6 @@
 # Weather Forecast SPA
 
-![Weather App Screenshot](screenshot.png) <!-- Replace with your actual screenshot -->
+![Weather App Screenshot](screenshot.png) 
 
 A single-page weather application that displays current weather conditions and a 5-day forecast for any city worldwide using the OpenWeatherMap API.
 
@@ -26,15 +26,10 @@ A single-page weather application that displays current weather conditions and a
 4. Toggle between Celsius/Fahrenheit using the buttons.
 
 ## Live Demo
-[View on GitHub Pages](#) <!-- Replace with your actual GitHub Pages URL -->
+To run weather SPA application locally
+just click
+https://project1-nonnie.vercel.app/
 
-## Installation
-To run locally:
-```bash
-git clone https://github.com/Nonniesankara/weather-app.git
-cd weather-app
-# Open index.html in your browser
-```
 
 ### API Key Note
 This project uses a free-tier OpenWeatherMap API key included in the code. For production use, consider:
@@ -62,5 +57,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Created by**: Milka Muthoni  
-**Date**: [Project Completion Date]  
+**Date**: 28th March 2025  
 **For**: Phase 1 Project Submission
